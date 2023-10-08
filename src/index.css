@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "KumbhSans"; /*Can be any text*/
+  src: local("KumbhSans-Medium"),
+    url("../fonts/KumbhSans-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "KumbhSans"; /*Can be any text*/
+  src: local("KumbhSans-Bold"),
+    url("../fonts/KumbhSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+#root{
+  width: 77%;
+  height: 82%;
+}
