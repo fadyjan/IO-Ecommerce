@@ -1,0 +1,51 @@
+#NavBarSelections {
+  list-style: none;
+  display: flex;
+  column-gap: 8.3%;
+  width: 67%;
+  /* min-width: 645px; */
+  margin: 0;
+  padding: 0;
+}
+
+#NavBarSelections > li {
+  color: #69707d;
+  font-family: 'Kumbh Sans';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 173.333% */
+  cursor: pointer;
+}
+
+#NavBarSelections a:focus,
+#NavBarSelections a:hover,
+#NavBarSelections a:visited,
+#NavBarSelections a:link,
+#NavBarSelections a:active {
+  text-decoration: none;
+  color: #69707d;
+}
+
+#NavBarSelections a:focus,
+#NavBarSelections a:hover {
+  color: #FF7E1B;
+}
+@media (max-width: 650px) {
+  #NavBarSelections {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    row-gap: 20px;
+  }
+
+  #NavBarSelections > li {
+    color: #1d2026;
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 144.444% */
+    cursor: pointer;
+  }
+}
