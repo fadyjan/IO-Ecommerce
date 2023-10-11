@@ -1,0 +1,33 @@
+/* The background overlay */
+.ModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The actual modal/popup box */
+.ModalContent {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px;
+    z-index: 1001;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#CloseModalBtn{
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    height: 30px;
+}

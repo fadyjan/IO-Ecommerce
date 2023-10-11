@@ -1,0 +1,44 @@
+#avatarDropdown {
+  position: absolute;
+  top: 100%; /* Position dropdown right below the avatar */
+  right: 0; /* Align the dropdown to the right of the avatar */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px; /* You can adjust this */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+#AvatarIcon {
+  width: 50px;
+  border-radius: 50%;
+}
+#AvatarIcon:hover{
+  border: 1px solid #ff7e1b;
+  box-sizing: border-box;
+}
+#avatarDropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#avatarDropdown li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+
+#avatarDropdown li:last-child {
+  border-bottom: none;
+}
+
+#avatarDropdown li:hover {
+  background-color: #faf8f8;
+  color: #ff7e1b;
+}
+
+@media (max-width:650px) {
+    #avatarDropdown {
+    top: 90%;
+    }
+}
