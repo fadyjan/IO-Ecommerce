@@ -1,0 +1,10 @@
+
+
+#regSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #regSectionWrapper > p {
+    font-size: 15px;
+  }

@@ -1,0 +1,72 @@
+#LoginPage {
+  width: 100%;
+  height: 90%;
+}
+#LoginComponentWrapper {
+  font-family: "Kumbh Sans";
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+  flex-direction: row;
+  column-gap: 15%;
+}
+
+#mail {
+  margin-top: 0px;
+}
+
+.form-control {
+  box-shadow: none;
+  border-radius: 0px;
+  border-style: none none solid none;
+  transition: all 0.5s;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.form-label {
+  font-size: 10px;
+  font-weight: bold;
+  color: gray;
+  display: block;
+  opacity: 1;
+  transform: translateY(-3em);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+}
+
+.form-group:focus-within {
+  transform: scale(1.05, 1.5);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+  transform: translateY(-4em) scale(0.8);
+}
+
+.form-control::placeholder {
+  color: transparent;
+}
+
+@media only screen and (max-width: 650px) {
+  #LoginComponentWrapper {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #loginSectionWrapper,
+  #regSectionWrapper {
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  #regSectionWrapper > p {
+    width: 50%;
+  }
+}
