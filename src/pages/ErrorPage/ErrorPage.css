@@ -1,0 +1,17 @@
+#error-page{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 7vw;
+    font-family: "Kumbh Sans";
+}
+
+#NotFoundP{
+    margin: 0;
+    text-align: center;
+
+}
+
