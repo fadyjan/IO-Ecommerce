@@ -7,7 +7,8 @@
   align-items: center;
 }
 
-.CardsWarpper {
+
+.CardsWarpper ,.LoadingShimmers{
   width: 100%;
   height: 90%;
   overflow-y: auto;
