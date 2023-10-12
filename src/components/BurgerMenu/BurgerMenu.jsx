@@ -25,7 +25,7 @@ const BurgerMenu = () => {
               src={CloseIcon}
               onClick={HandleCLosingMenu}
             ></img>
-            <NavBarSelections></NavBarSelections>
+            <NavBarSelections HandleCLosingMenu={HandleCLosingMenu}></NavBarSelections>
           </div>
           <div id="OverLay"></div>
         </>

@@ -1,22 +1,28 @@
 import React from "react";
 import "./NavBarSelections.css";
 import { Link } from "react-router-dom";
-const NavBarSelections = () => {
+const NavBarSelections = ({HandleCLosingMenu}) => {
+  const handleLinkClick = () => {
+    // to make sure that the current viewport is mobile 
+    if (HandleCLosingMenu) {
+      HandleCLosingMenu();
+    }
+  };
   return (
     <ul id="NavBarSelections">
       <li>
-        <Link to="./">Home</Link>
+        <Link to="./" onClick={handleLinkClick}>Home</Link>
       </li>
       <li>
-        <Link to="/AllProducts">All Products</Link>
+        <Link to="/AllProducts" onClick={handleLinkClick}>All Products</Link>
       </li>
 
       <li>
-        <Link to="/Categories">Categories</Link>
+        <Link to="/Categories" onClick={handleLinkClick}>Categories</Link>
       </li>
       
       <li>
-        <Link to="/login">Log in </Link>
+        <Link to="/login" onClick={handleLinkClick}> Log in </Link>
       </li>
     </ul>
   );
