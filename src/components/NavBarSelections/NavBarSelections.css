@@ -3,7 +3,7 @@
   display: flex;
   column-gap: 8.3%;
   width: 67%;
-  /* min-width: 645px; */
+/* min-width: 645px; */
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,10 @@
   line-height: 26px; /* 173.333% */
   cursor: pointer;
 }
-
+#NavBarSelections a{
+  display: flex;
+  width: max-content;
+}
 #NavBarSelections a:focus,
 #NavBarSelections a:hover,
 #NavBarSelections a:visited,

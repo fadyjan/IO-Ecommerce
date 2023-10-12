@@ -6,7 +6,7 @@
   justify-content: space-between;
 }
 
-#LogoWithSelctionsWrapper{
+#LogoWithSelctionsWrapper {
   display: flex;
   width: 53.2%;
   min-width: 446px;
@@ -14,23 +14,27 @@
   align-items: center;
   flex-direction: row;
 }
-#CompanyLogo{
-    width: 137px;
+#CompanyLogo {
+  width: 137px;
 }
 
-
-
-@media (max-width:650px) {
-    #LogoWithSelctionsWrapper{
-        padding-left: 24px;
-        column-gap: 16px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: start;
-        min-width: unset;
-    }
-
-    #NavBarWrapper {
+@media (max-width: 850px) {
+  #NavBarWrapper {
     height: 66px;
-    }
+  }
+}
+
+@media (max-width: 650px) {
+  #LogoWithSelctionsWrapper {
+    padding-left: 24px;
+    column-gap: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    min-width: unset;
+  }
+
+  #NavBarWrapper {
+    height: 66px;
+  }
 }
