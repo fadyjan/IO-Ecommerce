@@ -3,6 +3,8 @@ import "./BurgerMenu.css";
 import BurgerIcon from "../../assets/images/icon-menu.svg";
 import NavBarSelections from "../NavBarSelections/NavBarSelections";
 import CloseIcon from "../../assets/images/icon-close.svg";
+import useOnclickOutside from "react-cool-onclickoutside";
+
 const BurgerMenu = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
 
@@ -14,12 +16,15 @@ const BurgerMenu = () => {
     setIsMenuOpened(false);
   };
 
+  const ref = useOnclickOutside(() => {
+    setIsMenuOpened(false);
+  });
   return (
     <>
       <img src={BurgerIcon} onClick={HandleOpeningMenu}></img>
       {isMenuOpened ? (
         <>
-          <div id="SideBarMenu">
+          <div id="SideBarMenu" ref={ref}>
             <img
               id="CloseBtn"
               src={CloseIcon}

@@ -4,10 +4,10 @@ import "./CartMenu.css";
 import EmptyCart from "../EmptyCart/EmptyCart";
 import CartItem from "../CartItem/CartItem";
 
-const CartMenu = () => {
+const CartMenu = ({CartMenuRef}) => {
   const CartProducts = useSelector((state) => state.cart.cartProducts);
   return (
-    <div id="CartMenuWrapper">
+    <div id="CartMenuWrapper" ref={CartMenuRef}>
       <div id="CartLabelDiv">
         <label id="CartLabel">Cart</label>
       </div>
