@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const initialState = {
-  allProducts: [], 
+  allProducts: [],
   loading: false,
   error: '',
 };
@@ -22,7 +22,7 @@ export const AllProductsSlice = createSlice({
     });
     builder.addCase(getAllProducts.fulfilled, (state, action) => {
       state.loading = false;
-      state.allProducts = action.payload; 
+      state.allProducts = action.payload;
       state.error = '';
     });
     builder.addCase(getAllProducts.rejected, (state, action) => {
@@ -32,5 +32,4 @@ export const AllProductsSlice = createSlice({
     });
   },
 });
-
-export default AllProductsSlice.reducer; // Export the reducer
+export default AllProductsSlice.reducer; 

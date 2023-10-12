@@ -1,0 +1,11 @@
+.ControllerWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.controller-input {
+  border: none;
+  outline: none;
+  padding: 10px 15px; /* Adjust this padding to set the height */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
