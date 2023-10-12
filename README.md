@@ -73,16 +73,16 @@ To build a single-page React application for a fictional e-commerce website.
 
 The IO-Ecommerce project is organized with a clear and modular structure to enhance readability and maintainability. Below is a breakdown:
 
-
-|──src
-    ├───assets
-    │   ├───fonts # Font assets for the project
-    │   └───images # Image assets like icons and product images
-    ├───components # Reusable React components
-    ├───pages # Components representing entire pages/views
-    ├───router # Routing logic and routes configuration
-    └───store # State management using solutions like Redux or Context
-        └───ReduxSlices
+    .
+    |──src
+        ├───assets
+        │   ├───fonts # Font assets for the project
+        │   └───images # Image assets like icons and product images
+        ├───components # Reusable React components
+        ├───pages # Components representing entire pages/views
+        ├───router # Routing logic and routes configuration
+        └───store # State management using solutions like Redux or Context
+            └───ReduxSlices
 
 
 ## Installation
