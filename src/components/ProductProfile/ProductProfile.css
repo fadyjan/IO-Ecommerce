@@ -45,6 +45,8 @@
 }
 
 #ProductProfileDescription {
+  word-wrap: break-word;
+  max-width: 100%;
   color: #69707d;
   font-family: Kumbh Sans;
   font-size: 16px;
