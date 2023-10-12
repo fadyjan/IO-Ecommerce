@@ -61,15 +61,12 @@ To build a single-page React application for a fictional e-commerce website.
 ### Routing ✅
 
 - Client-side routing using React Router.
-- Separate routes for the product listing page and the shopping cart.
+- Separate routes for the home page, product listing, category listing, product page, login page
 
 ### Responsive Design ✅
 
 - Responsive on both desktop and mobile devices.
 
-### Testing (Optional)
-
-- Unit tests for critical components.
 
 ## Project Structure
 
@@ -88,7 +85,10 @@ The IO-Ecommerce project is organized with a clear and modular structure to enha
         ├───router      # Routing logic and routes configuration by React-router-dom v6
         |
         └───store       # State management using ReducToolKit
-
+        |
+        └───utils       # helper functions
+        |       
+        └───Hooks       # Custom Hooks
 
 ## Technologies Used
 
