@@ -7,6 +7,7 @@ import Jewelery from "../../assets/images/jewelery.jpg";
 import womenclothing from "../../assets/images/womenclothing.jpg";
 import menclothing from "../../assets/images/menclothing.jpg";
 import electronics from "../../assets/images/electronics.png";
+import CategoryCardShimmerLoading from "../../components/CategoryCardShimmerLoading/CategoryCardShimmerLoading";
 const CategoriesCovers = [electronics, Jewelery, menclothing, womenclothing];
 const CategoriesPage = () => {
   const AllCategories = useSelector((state) => state.allCategories);
@@ -17,7 +18,10 @@ const CategoriesPage = () => {
 
   return (
     <div id="CategoriesPageWrapper">
-      {AllCategories.loading && <h1>Loading</h1>}
+      {AllCategories.loading &&
+        CategoriesCovers.map((image,index) => {
+          return <CategoryCardShimmerLoading key={"LoaderShimer"+index}/>;
+        })}
       {!AllCategories.loading && AllCategories.error ? (
         <h1>{AllCategories.error}</h1>
       ) : null}
