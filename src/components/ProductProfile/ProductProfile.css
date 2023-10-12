@@ -36,6 +36,8 @@
 }
 
 #ProductProfileTitle {
+  word-wrap: break-word;
+  max-width: 100%;
   color: #1d2026;
   font-family: "Kumbh Sans";
   font-size: 44px;
