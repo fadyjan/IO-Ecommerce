@@ -2,8 +2,8 @@
 
 Welcome to the IO-Ecommerce project! This application was developed as a submission for the I-O-Tech React Developer assignment. The primary objective was to create a single-page React application emulating a fictional e-commerce platform, showcasing essential features of modern online shopping experiences.
 
-(./public/LandingPageDesktopVersion.png)
-(./public/LandingPageMovileVersion.png)
+![Landing Page Desktop Version](./public/LandingPageDesktopVersion.png)
+![Landing Page Mobile Version](./public/LandingPageMovileVersion.png)
 
 ## Table of Contents
 
