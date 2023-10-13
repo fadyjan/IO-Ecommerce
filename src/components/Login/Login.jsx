@@ -10,9 +10,10 @@ const Login = () => {
 
   return (
     <div id="loginSectionWrapper">
-      <h2>LOG IN</h2>
       {tokenRequest.userToken == "" ? (
         <>
+          <h2>LOG IN</h2>
+
           <div className="form-group">
             <input
               type="text"
@@ -46,7 +47,7 @@ const Login = () => {
         </>
       ) : (
         <>
-          <h1>Hello Fady You Signed In successfully</h1>
+          <h1 style={{textAlign:'center'}}>Hello Fady You Signed In successfully</h1>
         </>
       )}
     </div>
