@@ -3,7 +3,10 @@ import "./NavBarAvatar.css";
 import AvatarrIcon from "../../assets/images/image-avatar.png";
 import { useDispatch } from "react-redux";
 import { removeUserToken } from "../../store/ReduxSlices/AuthSlice";
+import { emptyCart } from "../../store/ReduxSlices/CartSlice";
 import ModalPopUp from "../ModalPopUp/ModalPopUp";
+import useOnclickOutside from "react-cool-onclickoutside";
+
 const NavBarAvatar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -15,19 +18,21 @@ const NavBarAvatar = () => {
 
   const HandleLogOut = () => {
     dipatch(removeUserToken());
+    dipatch(emptyCart())
     setIsModalOpen(true)
     setDropdownVisible(false)
   };
-
-  const HandlePopUp = () => {};
+  const ref = useOnclickOutside(() => {
+    setDropdownVisible(false);
+  });
 
   return (
-    <div onClick={handleToggleDropdown}>
-      <img id="AvatarIcon" src={AvatarrIcon}></img>
+    <div onClick={handleToggleDropdown} ref={ref}>
+      <img id="AvatarIcon" src={AvatarrIcon} ></img>
       {isDropdownVisible && (
-        <div id="avatarDropdown">
+        <div id="avatarDropdown" >
           <ul>
-            <li onClick={HandleLogOut}>Log Out</li>
+            <li  onClick={HandleLogOut}>Log Out</li>
           </ul>
         </div>
       )}
