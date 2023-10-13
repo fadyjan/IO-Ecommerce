@@ -57,7 +57,8 @@ To build a single-page React application for a fictional e-commerce website.
 - Implement user authentication.
 - Allow users to sign in and sign out.
 - Ensure only authenticated users can add items to the cart.
-
+- Log in credentials  --> username: mor_2314   password: 83r5^_
+  
 ### Routing ✅
 
 - Client-side routing using React Router.
