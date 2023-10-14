@@ -28,7 +28,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px; 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -44,7 +44,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px; 
 }
 
 .CartItemTotalPrice {
@@ -53,7 +53,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px; 
 }
 
 .RemoveItem{

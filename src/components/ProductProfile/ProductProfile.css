@@ -132,12 +132,12 @@
   }
 
   #ProductProfileIamge >img {
-    max-width: 158px;  /* The image won't exceed the width of its parent */
-    max-height: 240px; /* The image won't exceed the height of its parent */
-    display: block;   /* Remove space below the image */
-    width: auto;      /* Auto width will maintain the aspect ratio */
-    height: 100%;     /* You can set height to 100% to ensure it fills the height of its container */
-}
+    max-width: 158px;  
+    max-height: 240px; 
+    display: block;  
+    width: auto;      
+    height: 100%;    
+  }
 
   #ProductProfileInfo {
     width: 100%;
