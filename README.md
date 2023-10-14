@@ -19,10 +19,7 @@ Welcome to the IO-Ecommerce project! This application was developed as a submiss
   - [Testing](#testing-optional)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Running the App](#running-the-app)
-  - [Running the Tests](#running-the-tests)
+- [Installation](#installation)
 - [Deployment](#deployment)
 
 ## Objective
@@ -127,3 +124,9 @@ To run this project on your local machine, follow these steps:
    ```
    npm run dev
    ```
+
+## Deployment
+
+Deployment is done by using vercel and throught adjust vercel config inside the Project
+
+**[Deployment Link](https://io-ecommerce.vercel.app/)**
