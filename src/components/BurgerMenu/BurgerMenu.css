@@ -1,41 +1,49 @@
-#SideBarMenu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 100%;
-    background-color: white;
-    z-index: 7;
-    overflow: hidden;
+#SideBarMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  z-index: 7;
+  overflow: hidden;
+}
+
+#SideBarMenu {
+  transition: transform 0.3s ease-in-out;
+}
+.closeMenu {
+  transform: translateX(-100%);
+}
+.showMenu {
+  transform: translateX(0);
 }
 
 @media (max-width: 650px) {
-    #SideBarMenu{
-        padding-left: 25px;
-        box-sizing: border-box;
-        row-gap: 53px;
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: column;
-        z-index: 7;
-
-    }
-
-    #CloseBtn{
-      margin-top: 24.78px;
-      cursor: pointer;
-    }
-
-    #OverLay{
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100vh;
-        width: 100%;
-        background-color: black;
-        opacity: 0.5;
-        z-index: 6;
-    }
+  #SideBarMenu {
+    padding-left: 25px;
+    box-sizing: border-box;
+    row-gap: 53px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    z-index: 7;
   }
-  
+
+  #CloseBtn {
+    margin-top: 24.78px;
+    cursor: pointer;
+  }
+
+  #OverLay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 6;
+  }
+}

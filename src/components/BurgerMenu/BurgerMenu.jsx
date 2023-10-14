@@ -22,19 +22,17 @@ const BurgerMenu = () => {
   return (
     <>
       <img src={BurgerIcon} onClick={HandleOpeningMenu}></img>
-      {isMenuOpened ? (
-        <>
-          <div id="SideBarMenu" ref={ref}>
-            <img
-              id="CloseBtn"
-              src={CloseIcon}
-              onClick={HandleCLosingMenu}
-            ></img>
-            <NavBarSelections HandleCLosingMenu={HandleCLosingMenu}></NavBarSelections>
-          </div>
-          <div id="OverLay"></div>
-        </>
-      ) : null}
+      <div
+        id="SideBarMenu"
+        className={isMenuOpened ? "showMenu" : "closeMenu"}
+        ref={ref}
+      >
+        <img id="CloseBtn" src={CloseIcon} onClick={HandleCLosingMenu}></img>
+        <NavBarSelections
+          HandleCLosingMenu={HandleCLosingMenu}
+        ></NavBarSelections>
+      </div>
+      {isMenuOpened ? <div id="OverLay"></div> : null}
     </>
   );
 };

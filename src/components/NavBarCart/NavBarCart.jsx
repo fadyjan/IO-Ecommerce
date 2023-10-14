@@ -19,9 +19,11 @@ const NavBarCart = () => {
 
   return (
     <div id="CartWithAvatarWrapper">
-      <img id="CartIcon" src={IconCart} onClick={handleShowingCart}></img>
-      {Count > 0 && <div id="CartCount">{Count}</div>}
-      {isMenuOpen ? <CartMenu CartMenuRef={ref}></CartMenu> : null}
+      <div ref={ref}>
+        <img id="CartIcon" src={IconCart} onClick={handleShowingCart}></img>
+        {Count > 0 && <div id="CartCount">{Count}</div>}
+        {isMenuOpen ? <CartMenu ></CartMenu> : null}
+      </div>
       <NavBarAvatar></NavBarAvatar>
     </div>
   );
