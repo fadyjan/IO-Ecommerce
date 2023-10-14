@@ -1,49 +1,18 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { addProduct } from "../../store/ReduxSlices/CartSlice";
-import { useNavigate } from "react-router-dom";
+// AddToCart component
+import React from "react";
 import ModalPopUp from "../ModalPopUp/ModalPopUp";
+import useCartActions from "../../hooks/useCartActions"; // path might vary
+
 const AddToCart = ({ amount, product }) => {
-  const [showModal, setShowModal] = useState(false);
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const isUserLogedIn = useSelector((state) => state.auth.userToken);
-
-  //
-  const handleAddingProdcutToCart = () => {
-    setShowModal(true);
-    dispatch(addProduct({ ...product, amount }));
-    setTimeout(() => {
-      setShowModal(false);
-    }, 2000);
-  };
-
-  const redirectToLoginPage = () => {
-    setShowModal(true);
-    setTimeout(() => {
-      setShowModal(false);
-      navigate("/login");
-    }, 2500);
-  };
+  const { handleButtonClick, showModal, modalMessage, onCloseModal } =
+    useCartActions(amount, product);
 
   return (
     <>
       {showModal && (
-        <ModalPopUp
-          onClose={() => setShowModal(false)}
-          contentMessage={
-            isUserLogedIn
-              ? "Item has been added to the cart"
-              : "You have to log in first, redirect to login page"
-          }
-        />
+        <ModalPopUp onClose={onCloseModal} contentMessage={modalMessage} />
       )}
-      <button
-        id="AddToCartButton"
-        onClick={
-          isUserLogedIn != "" ? handleAddingProdcutToCart : redirectToLoginPage
-        }
-      >
+      <button id="AddToCartButton" onClick={handleButtonClick}>
         Add To Cart
       </button>
     </>
