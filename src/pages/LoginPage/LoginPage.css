@@ -62,11 +62,14 @@
   #loginSectionWrapper,
   #regSectionWrapper {
     width: 100%;
-    height: 50%;
     justify-content: center;
     align-items: center;
   }
+
+  #loginSectionWrapper {
+    min-height: 50%;
+  }
   #regSectionWrapper > p {
-    width: 50%;
+    width: 70%;
   }
 }
