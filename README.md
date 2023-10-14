@@ -16,7 +16,6 @@ Welcome to the IO-Ecommerce project! This application was developed as a submiss
   - [Authentication](#authentication-optional)
   - [Routing](#routing)
   - [Responsive Design](#responsive-design)
-  - [Testing](#testing-optional)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
